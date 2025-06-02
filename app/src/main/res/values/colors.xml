@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gainsboro">#dcdcdc</color><!--淡灰色 -->
+    <color name="violet">#ee82ee</color><!--紫罗兰色 -->
+    <color name="beige">#f5f5dc</color><!--米色 -->
+    <color name="wheat">#f5deb3</color><!--浅黄色 -->
+    <color name="sandybrown">#f4a460</color><!--沙褐色 -->
+</resources>

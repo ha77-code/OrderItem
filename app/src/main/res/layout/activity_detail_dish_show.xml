@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail_dish_show"
+    android:background="@color/wheat">
+
+    <ImageView
+        android:id="@+id/dishimage"
+        android:layout_width="203dp"
+        android:layout_height="110dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/methodshow"
+        android:layout_width="320dp"
+        android:layout_height="200dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdshow" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:text="主料："
+        android:textSize="20sp"
+        android:gravity="right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dishimage" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:text="辅料："
+        android:textSize="20sp"
+        android:gravity="right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainshow" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:text="调料："
+        android:textSize="20sp"
+        android:gravity="right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondshow" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="150dp"
+        android:text="做法："
+        android:textSize="20sp"
+        android:gravity="right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdshow" />
+
+    <TextView
+        android:id="@+id/mainshow"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dishimage" />
+
+    <TextView
+        android:id="@+id/secondshow"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainshow" />
+
+    <TextView
+        android:id="@+id/thirdshow"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondshow" />
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="返回"
+        app:layout_constraintEnd_toStartOf="@+id/dishimage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="加入菜单"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dishimage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
