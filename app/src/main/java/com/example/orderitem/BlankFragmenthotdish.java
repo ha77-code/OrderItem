@@ -33,7 +33,8 @@ public class BlankFragmenthotdish extends Fragment{
             new Dishes("蜜汁烤排骨",R.drawable.hotdish4,"https://home.meishichina.com/recipe-663691.html"),
             new Dishes("猪肚鸡",R.drawable.hotdish5,"https://home.meishichina.com/recipe-663964.html"),
             new Dishes("西洋参炖鸽子",R.drawable.hotdish6,"https://home.meishichina.com/recipe-663475.html"),
-            new Dishes("咕噜虾仁",R.drawable.hotdish7,"https://home.meishichina.com/recipe-662752.html")
+            new Dishes("咕噜虾仁",R.drawable.hotdish7,"https://home.meishichina.com/recipe-662752.html"),
+            new Dishes("减脂版菠萝咕咾肉（鸡胸肉不油炸）",R.drawable.hotdish8,"https://home.meishichina.com/recipe-664633.html")
     };
     private RecyclerView recyclerView;
     private MyRecycleViewAdapter myrecyckerViewAdapter;

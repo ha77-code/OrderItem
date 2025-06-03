@@ -100,7 +100,7 @@ public class MainMenuActivity extends AppCompatActivity {
         new AlertDialog.Builder(this)
                 .setTitle("温馨提示")
                 .setMessage("是否选定菜品")
-                .setPositiveButton("确定",((dialog, which) -> clearMenu()))
+                .setPositiveButton("确定选择",((dialog, which) -> clearMenu()))
                 .setNegativeButton("思考一下",null).show();
     }
     private void clearMenu(){
@@ -108,6 +108,6 @@ public class MainMenuActivity extends AppCompatActivity {
         selecteddishes=sharedPreferences.getString("menu","");
         sharedPreferences.edit().remove("menu").apply();
         loadMenu();
-        Toast.makeText(this,"菜品已选定",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"这次菜品已选定",Toast.LENGTH_SHORT).show();
     }
 }
