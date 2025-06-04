@@ -1,5 +1,6 @@
 package com.example.orderitem;
 
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -54,8 +55,8 @@ public class MyRecycleViewAdapter extends RecyclerView.Adapter<MyRecycleViewAdap
             this.imageView=(ImageView)itemView.findViewById(R.id.imageshow);
             this.textView=(TextView)itemView.findViewById(R.id.nameshow);
             textView.setBackgroundResource(R.drawable.border);
+            textView.setTextColor(Color.parseColor("#FF000000"));
             this.relativeLayout=(RelativeLayout)itemView.findViewById(R.id.relativeLayout);
-            //relativeLayout.setBackgroundResource(R.drawable.border);
             mylistener=listener;
             itemView.setOnClickListener(this);
         }

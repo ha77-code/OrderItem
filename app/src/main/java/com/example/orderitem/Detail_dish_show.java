@@ -3,6 +3,7 @@ package com.example.orderitem;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -35,7 +36,7 @@ import java.util.List;
 
 public class Detail_dish_show extends AppCompatActivity {
 
-    private TextView methodshow,mainshow,secondshow,thirdshow;
+    private TextView methodshow,mainshow,secondshow,thirdshow,one,two,three,foru;
     private ImageView dishimage;
     private String TAG="Detail_dish_show";
     private Button backbtn,addbtn;
@@ -51,6 +52,14 @@ public class Detail_dish_show extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        one=findViewById(R.id.one);
+        one.setTextColor(Color.parseColor("#FF000000"));
+        two=findViewById(R.id.two);
+        two.setTextColor(Color.parseColor("#FF000000"));
+        three=findViewById(R.id.three);
+        three.setTextColor(Color.parseColor("#FF000000"));
+        foru=findViewById(R.id.frou);
+        foru.setTextColor(Color.parseColor("#FF000000"));
         methodshow=findViewById(R.id.methodshow);
         methodshow.setBackgroundResource(R.drawable.border);
         mainshow=findViewById(R.id.mainshow);
@@ -70,11 +79,8 @@ public class Detail_dish_show extends AppCompatActivity {
             String getUrl=getIntent().getStringExtra("dish_url");
             Log.i(TAG,"1");
             try {
-                //Document doc= (Document) Jsoup.connect(getUrl).get();
                 Document doc= Jsoup.connect(getUrl).get();
                 Log.i(TAG,doc.text());
-                //Element mainmateril=doc.getElementById("fieldset").get();
-                //Elements mainmaterils=mainmateril.getElementById("b");
                 Element mainmateril = doc.getElementsByTag("fieldset").get(0);
                 Log.i(TAG,"2");
                 Elements mainmaterils = mainmateril.getElementsByTag("b");
@@ -86,6 +92,7 @@ public class Detail_dish_show extends AppCompatActivity {
                 }
                 //获取主料
                 runOnUiThread(()->mainshow.append(first));
+                mainshow.setTextColor(Color.parseColor("#FF000000"));
                 Element secondmateril=doc.getElementsByTag("fieldset").get(1);
                 Elements secondmaterils=secondmateril.getElementsByTag("b");
                 StringBuilder second=new StringBuilder();
@@ -95,6 +102,7 @@ public class Detail_dish_show extends AppCompatActivity {
                 }
                 //获取辅料
                 runOnUiThread(()->secondshow.append(second));
+                secondshow.setTextColor(Color.parseColor("#FF000000"));
                 Element thrdmateril=doc.getElementsByTag("fieldset").get(2);
                 Elements thrdmaterils=thrdmateril.getElementsByTag("b");
                 StringBuilder third=new StringBuilder();
@@ -104,6 +112,7 @@ public class Detail_dish_show extends AppCompatActivity {
                 }
                 //获取调料
                 runOnUiThread(()->thirdshow.append(third));
+                thirdshow.setTextColor(Color.parseColor("#FF000000"));
                 Elements mainmethods=doc.select("div.recipeStep ul li");
                 if(mainmethods.isEmpty()){
                     runOnUiThread(()->methodshow.append("没有找到步骤"));
@@ -117,6 +126,7 @@ public class Detail_dish_show extends AppCompatActivity {
                     }
                 }
                 runOnUiThread(()->methodshow.append(method));
+                methodshow.setTextColor(Color.parseColor("#FF000000"));
             } catch (IOException e) {
                 runOnUiThread(()->methodshow.setText("网络请求失败："+e.getMessage()));
             }catch (Exception e){
