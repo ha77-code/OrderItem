@@ -153,7 +153,7 @@ public class Detail_dish_show extends AppCompatActivity {
                 Intent intent=new Intent(Detail_dish_show.this, MainMenuActivity.class);
                 intent.putExtra("add_dish_name",getName);
                 startActivity(intent);
-                Toast.makeText(getApplicationContext(),"已经添加至菜单",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),"这次菜品已选定",Toast.LENGTH_SHORT).show();
             }
         });
     }

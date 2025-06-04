@@ -10,36 +10,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link BlankFragmentstaplefood#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class BlankFragmentstaplefood extends Fragment {
-
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
     public BlankFragmentstaplefood() {
-        // Required empty public constructor
     }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment BlankFragmentsoup.
-     */
-    // TODO: Rename and change types and number of parameters
     public static BlankFragmentstaplefood newInstance(String param1, String param2) {
         BlankFragmentstaplefood fragment = new BlankFragmentstaplefood();
         Bundle args = new Bundle();
@@ -63,13 +41,13 @@ public class BlankFragmentstaplefood extends Fragment {
     private BlankFragmenthotdish.Dishes soupdishes[]={
             new BlankFragmenthotdish.Dishes("肥牛芝士焗饭",R.drawable.staplefood1,"https://home.meishichina.com/recipe-662563.html"),
             new BlankFragmenthotdish.Dishes("板栗牛肋条焖饭",R.drawable.staplefood2,"https://home.meishichina.com/recipe-663729.html"),
-            new BlankFragmenthotdish.Dishes("腊肠牛肉焖饭",R.drawable.staplefood3,"https://home.meishichina.com/recipe-662169.html"),
-            new BlankFragmenthotdish.Dishes("煲仔饭",R.drawable.staplefood4,"https://home.meishichina.com/recipe-662221.html"),
-            new BlankFragmenthotdish.Dishes("排骨腊肠蒸饭",R.drawable.staplefood5,"https://home.meishichina.com/recipe-661835.html"),
-            new BlankFragmenthotdish.Dishes("紫菜虾仁炒饭",R.drawable.staplefood6,"https://home.meishichina.com/recipe-661261.html"),
-            new BlankFragmenthotdish.Dishes("菠萝炒饭",R.drawable.staplefood7,"https://home.meishichina.com/recipe-659695.html"),
-            new BlankFragmenthotdish.Dishes("春笋焖饭",R.drawable.staplefood8,"https://home.meishichina.com/recipe-663524.html"),
-            new BlankFragmenthotdish.Dishes("槐花麦饭",R.drawable.staplefood9,"https://home.meishichina.com/recipe-664563.html")
+            new BlankFragmenthotdish.Dishes("腊肠牛肉焖饭",R.drawable.img,"https://home.meishichina.com/recipe-662169.html"),
+            new BlankFragmenthotdish.Dishes("煲仔饭",R.drawable.img,"https://home.meishichina.com/recipe-662221.html"),
+            new BlankFragmenthotdish.Dishes("排骨腊肠蒸饭",R.drawable.img,"https://home.meishichina.com/recipe-661835.html"),
+            new BlankFragmenthotdish.Dishes("紫菜虾仁炒饭",R.drawable.img,"https://home.meishichina.com/recipe-661261.html"),
+            new BlankFragmenthotdish.Dishes("菠萝炒饭",R.drawable.img,"https://home.meishichina.com/recipe-659695.html"),
+            new BlankFragmenthotdish.Dishes("春笋焖饭",R.drawable.img,"https://home.meishichina.com/recipe-663524.html"),
+            new BlankFragmenthotdish.Dishes("槐花麦饭",R.drawable.img,"https://home.meishichina.com/recipe-664563.html")
     };
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

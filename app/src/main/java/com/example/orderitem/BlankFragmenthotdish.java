@@ -11,12 +11,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link BlankFragmenthotdish#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class BlankFragmenthotdish extends Fragment{
     public BlankFragmenthotdish() {
     }
@@ -30,13 +24,13 @@ public class BlankFragmenthotdish extends Fragment{
             new Dishes("肉沫皮蛋炒青椒",R.drawable.hotdish1,"https://home.meishichina.com/recipe-663860.html"),
             new Dishes("麻椒炒猪肝", R.drawable.hotdish2,"https://home.meishichina.com/recipe-664406.html"),
             new Dishes("红焖牛肉", R.drawable.hotdish3,"https://home.meishichina.com/recipe-664244.html"),
-            new Dishes("蜜汁烤排骨",R.drawable.hotdish4,"https://home.meishichina.com/recipe-663691.html"),
-            new Dishes("猪肚鸡",R.drawable.hotdish5,"https://home.meishichina.com/recipe-663964.html"),
-            new Dishes("西洋参炖鸽子",R.drawable.hotdish6,"https://home.meishichina.com/recipe-663475.html"),
-            new Dishes("咕噜虾仁",R.drawable.hotdish7,"https://home.meishichina.com/recipe-662752.html"),
-            new Dishes("减脂版菠萝咕咾肉（鸡胸肉不油炸）",R.drawable.hotdish8,"https://home.meishichina.com/recipe-664633.html"),
-            new Dishes("皮蛋猪肝菠菜汤",R.drawable.hotdish9,"https://home.meishichina.com/recipe-664042.html"),
-            new Dishes("菠萝牛肉粒",R.drawable.hotdish10,"https://home.meishichina.com/recipe-664035.html")
+            new Dishes("蜜汁烤排骨",R.drawable.img,"https://home.meishichina.com/recipe-663691.html"),
+            new Dishes("猪肚鸡",R.drawable.img,"https://home.meishichina.com/recipe-663964.html"),
+            new Dishes("西洋参炖鸽子",R.drawable.img,"https://home.meishichina.com/recipe-663475.html"),
+            new Dishes("咕噜虾仁",R.drawable.img,"https://home.meishichina.com/recipe-662752.html"),
+            new Dishes("减脂版菠萝咕咾肉（鸡胸肉不油炸）",R.drawable.img,"https://home.meishichina.com/recipe-664633.html"),
+            new Dishes("皮蛋猪肝菠菜汤",R.drawable.img,"https://home.meishichina.com/recipe-664042.html"),
+            new Dishes("菠萝牛肉粒",R.drawable.img,"https://home.meishichina.com/recipe-664035.html")
     };
     private RecyclerView recyclerView;
     private MyRecycleViewAdapter myrecyckerViewAdapter;
