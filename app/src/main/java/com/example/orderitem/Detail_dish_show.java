@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -152,6 +153,7 @@ public class Detail_dish_show extends AppCompatActivity {
                 Intent intent=new Intent(Detail_dish_show.this, MainMenuActivity.class);
                 intent.putExtra("add_dish_name",getName);
                 startActivity(intent);
+                Toast.makeText(getApplicationContext(),"已经添加至菜单",Toast.LENGTH_SHORT).show();
             }
         });
     }
