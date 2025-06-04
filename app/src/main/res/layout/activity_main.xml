@@ -77,8 +77,8 @@
 
     <FrameLayout
         android:id="@+id/fragmentshow"
-        android:layout_width="303dp"
-        android:layout_height="480dp"
+        android:layout_width="300dp"
+        android:layout_height="490dp"
         android:padding="2dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
