@@ -21,9 +21,9 @@ public class BlankFragmenthotdish extends Fragment{
         return fragment;
     }
     private Dishes hotdishes[]={
-            new Dishes("肉沫皮蛋炒青椒",R.drawable.hotdish1,"https://home.meishichina.com/recipe-663860.html"),
-            new Dishes("麻椒炒猪肝", R.drawable.hotdish2,"https://home.meishichina.com/recipe-664406.html"),
-            new Dishes("红焖牛肉", R.drawable.hotdish3,"https://home.meishichina.com/recipe-664244.html"),
+            new Dishes("肉沫皮蛋炒青椒",R.drawable.img,"https://home.meishichina.com/recipe-663860.html"),
+            new Dishes("麻椒炒猪肝", R.drawable.img,"https://home.meishichina.com/recipe-664406.html"),
+            new Dishes("红焖牛肉", R.drawable.img,"https://home.meishichina.com/recipe-664244.html"),
             new Dishes("蜜汁烤排骨",R.drawable.img,"https://home.meishichina.com/recipe-663691.html"),
             new Dishes("猪肚鸡",R.drawable.img,"https://home.meishichina.com/recipe-663964.html"),
             new Dishes("西洋参炖鸽子",R.drawable.img,"https://home.meishichina.com/recipe-663475.html"),
@@ -55,7 +55,6 @@ public class BlankFragmenthotdish extends Fragment{
                 Intent intent = new Intent(getActivity(), Detail_dish_show.class);
                 intent.putExtra("dish_name", selectedDish.getName());
                 intent.putExtra("dish_url", selectedDish.getDishurl());
-                intent.putExtra("dish_image", selectedDish.getImage());
                 startActivity(intent);
             }
         });

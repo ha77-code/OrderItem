@@ -72,9 +72,6 @@ public class Detail_dish_show extends AppCompatActivity {
         methodshow.setMovementMethod(ScrollingMovementMethod.getInstance());
         dishimage=findViewById(R.id.dishimage);
         backbtn=findViewById(R.id.backbtn);
-        int temporaryimage=R.drawable.ic_launcher_foreground;
-        int getImage=getIntent().getIntExtra("dish_image",temporaryimage);
-        dishimage.setImageResource(getImage);
         Log.i(TAG,"0");
         Thread t=new Thread(()->{
             String getUrl=getIntent().getStringExtra("dish_url");

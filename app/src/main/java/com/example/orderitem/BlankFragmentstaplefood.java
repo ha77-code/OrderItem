@@ -39,8 +39,8 @@ public class BlankFragmentstaplefood extends Fragment {
     private MyRecycleViewAdapter myrecyckerViewAdapter;
     private RecyclerView recyclerView;
     private BlankFragmenthotdish.Dishes soupdishes[]={
-            new BlankFragmenthotdish.Dishes("肥牛芝士焗饭",R.drawable.staplefood1,"https://home.meishichina.com/recipe-662563.html"),
-            new BlankFragmenthotdish.Dishes("板栗牛肋条焖饭",R.drawable.staplefood2,"https://home.meishichina.com/recipe-663729.html"),
+            new BlankFragmenthotdish.Dishes("肥牛芝士焗饭",R.drawable.img,"https://home.meishichina.com/recipe-662563.html"),
+            new BlankFragmenthotdish.Dishes("板栗牛肋条焖饭",R.drawable.img,"https://home.meishichina.com/recipe-663729.html"),
             new BlankFragmenthotdish.Dishes("腊肠牛肉焖饭",R.drawable.img,"https://home.meishichina.com/recipe-662169.html"),
             new BlankFragmenthotdish.Dishes("煲仔饭",R.drawable.img,"https://home.meishichina.com/recipe-662221.html"),
             new BlankFragmenthotdish.Dishes("排骨腊肠蒸饭",R.drawable.img,"https://home.meishichina.com/recipe-661835.html"),
@@ -64,7 +64,6 @@ public class BlankFragmentstaplefood extends Fragment {
                 Intent intent=new Intent(getActivity(),Detail_dish_show.class);
                 intent.putExtra("dish_name",selecteddish.getName());
                 intent.putExtra("dish_url",selecteddish.getDishurl());
-                intent.putExtra("dish_image",selecteddish.getImage());
                 startActivity(intent);
             }
         });

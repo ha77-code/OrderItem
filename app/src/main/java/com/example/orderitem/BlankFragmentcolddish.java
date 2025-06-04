@@ -39,10 +39,10 @@ public class BlankFragmentcolddish extends Fragment {
     private MyRecycleViewAdapter myrecyckerViewAdapter;
     private RecyclerView recyclerView;
     private BlankFragmenthotdish.Dishes colddishes[]={
-            new BlankFragmenthotdish.Dishes("捞汁鱿鱼虾",R.drawable.colddish1,"https://home.meishichina.com/recipe-663910.html"),
-            new BlankFragmenthotdish.Dishes("柠檬生腌基围虾", R.drawable.colddish2,"https://home.meishichina.com/recipe-662339.html"),
-            new BlankFragmenthotdish.Dishes("捞汁小海鲜",R.drawable.colddish3,"https://home.meishichina.com/recipe-661446.html"),
-            new BlankFragmenthotdish.Dishes("凉拌苦瓜",R.drawable.colddish4,"https://home.meishichina.com/recipe-660500.html"),
+            new BlankFragmenthotdish.Dishes("捞汁鱿鱼虾",R.drawable.img,"https://home.meishichina.com/recipe-663910.html"),
+            new BlankFragmenthotdish.Dishes("柠檬生腌基围虾", R.drawable.img,"https://home.meishichina.com/recipe-662339.html"),
+            new BlankFragmenthotdish.Dishes("捞汁小海鲜",R.drawable.img,"https://home.meishichina.com/recipe-661446.html"),
+            new BlankFragmenthotdish.Dishes("凉拌苦瓜",R.drawable.img,"https://home.meishichina.com/recipe-660500.html"),
             new BlankFragmenthotdish.Dishes("酸辣鸡丝", R.drawable.img,"https://home.meishichina.com/recipe-659632.html"),
             new BlankFragmenthotdish.Dishes("青瓜拌虾滑",R.drawable.img,"https://home.meishichina.com/recipe-658853.html"),
             new BlankFragmenthotdish.Dishes("蓝莓山药泥",R.drawable.img,"https://home.meishichina.com/recipe-658477.html"),
@@ -64,7 +64,6 @@ public class BlankFragmentcolddish extends Fragment {
                 Intent intent=new Intent(getActivity(),Detail_dish_show.class);
                 intent.putExtra("dish_name",selectedDish.getName());
                 intent.putExtra("dish_url",selectedDish.getDishurl());
-                intent.putExtra("dish_image",selectedDish.getImage());
                 startActivity(intent);
             }
         });
