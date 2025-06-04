@@ -67,7 +67,9 @@ public class BlankFragmentcolddish extends Fragment {
             new BlankFragmenthotdish.Dishes("凉拌苦瓜",R.drawable.colddish4,"https://home.meishichina.com/recipe-660500.html"),
             new BlankFragmenthotdish.Dishes("酸辣鸡丝", R.drawable.staplefood6,"https://home.meishichina.com/recipe-659632.html"),
             new BlankFragmenthotdish.Dishes("青瓜拌虾滑",R.drawable.colddish6,"https://home.meishichina.com/recipe-658853.html"),
-            new BlankFragmenthotdish.Dishes("蓝莓山药泥",R.drawable.colddish7,"https://home.meishichina.com/recipe-658477.html")
+            new BlankFragmenthotdish.Dishes("蓝莓山药泥",R.drawable.colddish7,"https://home.meishichina.com/recipe-658477.html"),
+            new BlankFragmenthotdish.Dishes("菠萝香菜拌牛肉",R.drawable.colddish9,"https://home.meishichina.com/recipe-663829.html"),
+            new BlankFragmenthotdish.Dishes("家庭版碌鸭",R.drawable.colddish10,"https://home.meishichina.com/recipe-664624.html")
     };
     @SuppressLint("MissingInflatedId")
     @Override

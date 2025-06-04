@@ -67,7 +67,9 @@ public class BlankFragmentstaplefood extends Fragment {
             new BlankFragmenthotdish.Dishes("煲仔饭",R.drawable.staplefood4,"https://home.meishichina.com/recipe-662221.html"),
             new BlankFragmenthotdish.Dishes("排骨腊肠蒸饭",R.drawable.staplefood5,"https://home.meishichina.com/recipe-661835.html"),
             new BlankFragmenthotdish.Dishes("紫菜虾仁炒饭",R.drawable.staplefood6,"https://home.meishichina.com/recipe-661261.html"),
-            new BlankFragmenthotdish.Dishes("菠萝炒饭",R.drawable.staplefood7,"https://home.meishichina.com/recipe-659695.html")
+            new BlankFragmenthotdish.Dishes("菠萝炒饭",R.drawable.staplefood7,"https://home.meishichina.com/recipe-659695.html"),
+            new BlankFragmenthotdish.Dishes("春笋焖饭",R.drawable.staplefood8,"https://home.meishichina.com/recipe-663524.html"),
+            new BlankFragmenthotdish.Dishes("槐花麦饭",R.drawable.staplefood9,"https://home.meishichina.com/recipe-664563.html")
     };
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
