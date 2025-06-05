@@ -39,15 +39,15 @@ public class BlankFragmentcolddish extends Fragment {
     private MyRecycleViewAdapter myrecyckerViewAdapter;
     private RecyclerView recyclerView;
     private BlankFragmenthotdish.Dishes colddishes[]={
-            new BlankFragmenthotdish.Dishes("捞汁鱿鱼虾",R.drawable.img,"https://home.meishichina.com/recipe-663910.html"),
-            new BlankFragmenthotdish.Dishes("柠檬生腌基围虾", R.drawable.img,"https://home.meishichina.com/recipe-662339.html"),
-            new BlankFragmenthotdish.Dishes("捞汁小海鲜",R.drawable.img,"https://home.meishichina.com/recipe-661446.html"),
-            new BlankFragmenthotdish.Dishes("凉拌苦瓜",R.drawable.img,"https://home.meishichina.com/recipe-660500.html"),
-            new BlankFragmenthotdish.Dishes("酸辣鸡丝", R.drawable.img,"https://home.meishichina.com/recipe-659632.html"),
-            new BlankFragmenthotdish.Dishes("青瓜拌虾滑",R.drawable.img,"https://home.meishichina.com/recipe-658853.html"),
-            new BlankFragmenthotdish.Dishes("蓝莓山药泥",R.drawable.img,"https://home.meishichina.com/recipe-658477.html"),
-            new BlankFragmenthotdish.Dishes("菠萝香菜拌牛肉",R.drawable.img,"https://home.meishichina.com/recipe-663829.html"),
-            new BlankFragmenthotdish.Dishes("家庭版碌鸭",R.drawable.img,"https://home.meishichina.com/recipe-664624.html")
+            new BlankFragmenthotdish.Dishes("捞汁鱿鱼虾",R.drawable.img1,"https://home.meishichina.com/recipe-663910.html"),
+            new BlankFragmenthotdish.Dishes("柠檬生腌基围虾", R.drawable.img1,"https://home.meishichina.com/recipe-662339.html"),
+            new BlankFragmenthotdish.Dishes("捞汁小海鲜",R.drawable.img1,"https://home.meishichina.com/recipe-661446.html"),
+            new BlankFragmenthotdish.Dishes("凉拌苦瓜",R.drawable.img1,"https://home.meishichina.com/recipe-660500.html"),
+            new BlankFragmenthotdish.Dishes("酸辣鸡丝", R.drawable.img1,"https://home.meishichina.com/recipe-659632.html"),
+            new BlankFragmenthotdish.Dishes("青瓜拌虾滑",R.drawable.img1,"https://home.meishichina.com/recipe-658853.html"),
+            new BlankFragmenthotdish.Dishes("蓝莓山药泥",R.drawable.img1,"https://home.meishichina.com/recipe-658477.html"),
+            new BlankFragmenthotdish.Dishes("菠萝香菜拌牛肉",R.drawable.img1,"https://home.meishichina.com/recipe-663829.html"),
+            new BlankFragmenthotdish.Dishes("家庭版碌鸭",R.drawable.img1,"https://home.meishichina.com/recipe-664624.html")
     };
     @SuppressLint("MissingInflatedId")
     @Override

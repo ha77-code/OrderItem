@@ -38,7 +38,6 @@ import java.util.List;
 public class Detail_dish_show extends AppCompatActivity {
 
     private TextView methodshow,mainshow,secondshow,thirdshow,one,two,three,foru;
-    private ImageView dishimage;
     private String TAG="Detail_dish_show";
     private Button backbtn,addbtn;
 
@@ -70,7 +69,6 @@ public class Detail_dish_show extends AppCompatActivity {
         thirdshow=findViewById(R.id.thirdshow);
         thirdshow.setBackgroundResource(R.drawable.border);
         methodshow.setMovementMethod(ScrollingMovementMethod.getInstance());
-        dishimage=findViewById(R.id.dishimage);
         backbtn=findViewById(R.id.backbtn);
         Log.i(TAG,"0");
         Thread t=new Thread(()->{
@@ -147,7 +145,7 @@ public class Detail_dish_show extends AppCompatActivity {
                 String newdish=addeddish.isEmpty()?getName:addeddish+"\n"+getName;
                 editor.putString("menu",newdish);
                 editor.apply();
-                Intent intent=new Intent(Detail_dish_show.this, MainMenuActivity.class);
+                Intent intent=new Intent(Detail_dish_show.this, MainActivity.class);
                 intent.putExtra("add_dish_name",getName);
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(),"这次菜品已选定",Toast.LENGTH_SHORT).show();

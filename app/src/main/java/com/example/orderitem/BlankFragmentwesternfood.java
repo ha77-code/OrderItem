@@ -40,13 +40,13 @@ public class BlankFragmentwesternfood extends Fragment {
     private MyRecycleViewAdapter myrecyckerViewAdapter;
     private RecyclerView recyclerView;
     private BlankFragmenthotdish.Dishes westernfooddishes[]={
-            new BlankFragmenthotdish.Dishes("芝士焗虾",R.drawable.img,"https://home.meishichina.com/recipe-614320.html"),
-            new BlankFragmenthotdish.Dishes("香煎牛排骨配蘑菇汁",R.drawable.img,"https://home.meishichina.com/recipe-608758.html"),
-            new BlankFragmenthotdish.Dishes("奶油三文鱼汤",R.drawable.img,"https://home.meishichina.com/recipe-596930.html"),
-            new BlankFragmenthotdish.Dishes("奶油培根香菇意面",R.drawable.img,"https://home.meishichina.com/recipe-568605.html"),
-            new BlankFragmenthotdish.Dishes("经典早餐牛油果开放土司",R.drawable.img,"https://home.meishichina.com/recipe-586755.html"),
-            new BlankFragmenthotdish.Dishes("盐烤三文鱼",R.drawable.img,"https://home.meishichina.com/recipe-583113.html"),
-            new BlankFragmenthotdish.Dishes("西班牙海鲜藜麦饭",R.drawable.img,"https://home.meishichina.com/recipe-579939.html")
+            new BlankFragmenthotdish.Dishes("芝士焗虾",R.drawable.img1,"https://home.meishichina.com/recipe-614320.html"),
+            new BlankFragmenthotdish.Dishes("香煎牛排骨配蘑菇汁",R.drawable.img1,"https://home.meishichina.com/recipe-608758.html"),
+            new BlankFragmenthotdish.Dishes("奶油三文鱼汤",R.drawable.img1,"https://home.meishichina.com/recipe-596930.html"),
+            new BlankFragmenthotdish.Dishes("奶油培根香菇意面",R.drawable.img1,"https://home.meishichina.com/recipe-568605.html"),
+            new BlankFragmenthotdish.Dishes("经典早餐牛油果开放土司",R.drawable.img1,"https://home.meishichina.com/recipe-586755.html"),
+            new BlankFragmenthotdish.Dishes("盐烤三文鱼",R.drawable.img1,"https://home.meishichina.com/recipe-583113.html"),
+            new BlankFragmenthotdish.Dishes("西班牙海鲜藜麦饭",R.drawable.img1,"https://home.meishichina.com/recipe-579939.html")
     };
 
     @Override

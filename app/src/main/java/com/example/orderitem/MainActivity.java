@@ -2,12 +2,15 @@ package com.example.orderitem;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
+import android.app.ListActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,6 +20,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.Fragment;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -107,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences=getSharedPreferences("add_dish",MODE_PRIVATE);
         selecteddishes=sharedPreferences.getString("menu","");
         sharedPreferences.edit().remove("menu").apply();
-        loadMenu();
+        //loadMenu();
         Toast.makeText(this,"这次菜品已选定",Toast.LENGTH_SHORT).show();
     }
 }

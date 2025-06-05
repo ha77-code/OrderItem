@@ -21,9 +21,6 @@
             android:name=".Detail_dish_show"
             android:exported="false" />
         <activity
-            android:name=".MainMenuActivity"
-            android:exported="true" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
