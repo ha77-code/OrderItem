@@ -105,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
     //更行添加的菜品方法
     private void loadMenu(){
         SharedPreferences sharedPreferences=getSharedPreferences("add_dish",MODE_PRIVATE);
-        String menu=sharedPreferences.getString("menu","请先添加菜品");
+        String menu=sharedPreferences.getString("menu","请先选择菜品");
         newmenu.setText(menu);
         newmenu.setMovementMethod(new ScrollingMovementMethod());
     }
@@ -120,8 +120,13 @@ public class MainActivity extends AppCompatActivity {
     private void clearMenu(){
         SharedPreferences sharedPreferences=getSharedPreferences("add_dish",MODE_PRIVATE);
         selecteddishes=sharedPreferences.getString("menu","");
-        sharedPreferences.edit().remove("menu").apply();
-        loadMenu();
-        Toast.makeText(this,"这次菜品已选定",Toast.LENGTH_SHORT).show();
+        if(sharedPreferences.getAll().isEmpty()){
+            Toast.makeText(this,"未选择菜品，请先选择菜菜品",Toast.LENGTH_SHORT).show();
+        }
+        else{
+            sharedPreferences.edit().remove("menu").apply();
+            loadMenu();
+            Toast.makeText(this,"这次菜品已选定,点击下方按钮可查看详情",Toast.LENGTH_SHORT).show();
+        }
     }
 }
