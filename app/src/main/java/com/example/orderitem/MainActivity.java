@@ -27,7 +27,8 @@ import java.util.HashMap;
 public class MainActivity extends AppCompatActivity {
 
     Button hotdishesbtn,colddishesbtn,soupbtn,westernfoodbtn,certainbtn,inspectbtn;
-    private TextView newmenu;
+    private TextView newmenu,textbeginadd;
+    private ImageView imageshow;
     String selecteddishes;
     @SuppressLint("MissingInflatedId")
     @Override
@@ -40,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        imageshow=findViewById(R.id.imageshow);
+        imageshow.setImageResource(R.drawable.ic_launcher_background);
+        textbeginadd=findViewById(R.id.textbeginadd);
         //相关菜品按钮
         hotdishesbtn=findViewById(R.id.hotdishesbtn);
         colddishesbtn=findViewById(R.id.colddishesbtn);
@@ -51,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         hotdishesbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                textbeginadd.setText("");
                 ShowFragment(new BlankFragmenthotdish());
             }
         });
@@ -58,18 +63,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ShowFragment(new BlankFragmentcolddish());
+                textbeginadd.setText("");
             }
         });
         soupbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ShowFragment(new BlankFragmentstaplefood());
+                textbeginadd.setText("");
             }
         });
         westernfoodbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ShowFragment(new BlankFragmentwesternfood());
+                textbeginadd.setText("");
             }
         });
         newmenu=findViewById(R.id.addmenueshow);
@@ -113,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences=getSharedPreferences("add_dish",MODE_PRIVATE);
         selecteddishes=sharedPreferences.getString("menu","");
         sharedPreferences.edit().remove("menu").apply();
-        //loadMenu();
+        loadMenu();
         Toast.makeText(this,"这次菜品已选定",Toast.LENGTH_SHORT).show();
     }
 }

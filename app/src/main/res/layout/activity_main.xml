@@ -39,54 +39,74 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout"
-        android:layout_width="74dp"
-        android:layout_height="350dp"
+        android:layout_width="110dp"
+        android:layout_height="420dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/wheat"
         android:orientation="vertical"
         android:padding="2dp"
-        android:background="@color/wheat"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/hotdishesbtn"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="热菜"
+            android:layout_marginTop="35dp"
             android:background="@drawable/shape"
+            android:text="热菜"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/colddishesbtn"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="凉菜"
+            android:layout_marginTop="35dp"
             android:background="@drawable/shape"
+            android:text="凉菜"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/hotdishesbtn" />
 
         <Button
             android:id="@+id/soupbtn"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="主食"
+            android:layout_marginTop="35dp"
             android:background="@drawable/shape"
+            android:text="主食"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/westernfoodbtn" />
 
         <Button
             android:id="@+id/westernfoodbtn"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="西餐"
+            android:layout_marginTop="35dp"
             android:background="@drawable/shape"
+            android:text="西餐"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/colddishesbtn" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageshow"
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textbeginadd"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="300dp"
+        android:padding="2dp"
+        android:text="点击菜品开始选择"
+        android:gravity="center"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
         android:id="@+id/fragmentshow"
