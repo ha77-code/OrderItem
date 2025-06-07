@@ -9,7 +9,7 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/img1"
-        android:label="简易选菜程序"
+        android:label="OrderItem"
         android:roundIcon="@drawable/img1"
         android:supportsRtl="true"
         android:theme="@style/Theme.OrderItem"
