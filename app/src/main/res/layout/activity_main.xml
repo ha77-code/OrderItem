@@ -89,29 +89,30 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/colddishesbtn" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <ImageView
         android:id="@+id/imageshow"
-        android:layout_width="300dp"
+        android:layout_width="280dp"
         android:layout_height="450dp"
         android:padding="2dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textbeginadd"
-        android:layout_width="300dp"
+        android:layout_width="280dp"
         android:layout_height="100dp"
         android:layout_marginTop="250dp"
+        android:gravity="center"
         android:padding="2dp"
         android:text="点击左边菜品按钮开始选择"
-        android:gravity="center"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
         android:id="@+id/fragmentshow"
-        android:layout_width="300dp"
+        android:layout_width="280dp"
         android:layout_height="450dp"
         android:padding="2dp"
         app:layout_constraintEnd_toEndOf="parent"
